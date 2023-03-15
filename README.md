@@ -115,3 +115,19 @@ git status
 #
 
 # Git-commands
+
+### Create Repository
+
+<br>
+initial repository
+
+```bash
+git init
+```
+
+<br>
+clone repository from remote
+
+```bash
+git clone https://github.com/dori-dev/learning-git.git
+```
