@@ -131,3 +131,73 @@ clone repository from remote
 ```bash
 git clone https://github.com/dori-dev/learning-git.git
 ```
+
+### Deep dive into the phases of Git
+
+<br>
+show untracked, modified, staged files
+
+```bash
+git status
+```
+
+<br>
+add untracked or modified file to stage
+
+```bash
+git add filename
+```
+
+<br>
+add all of untracked or modified file to stage
+
+```bash
+git add .
+```
+
+<br>
+add all of untracked or modified file to stage
+
+```bash
+git add -A
+```
+
+<br>
+add part of file to staging area
+
+```bash
+git add --patch
+```
+
+<br>
+
+```bash
+git commit
+```
+
+<br>
+commit changes of tracked files to head
+
+```bash
+git commit -m "comm_msg"
+```
+
+<br>
+add all changes of tracked files to staging and commit them.
+
+```bash
+git commit -a -m "comm_msg"
+```
+
+<br>
+amend commit
+
+```bash
+git commit --amend
+```
+
+<br>
+
+```bash
+git commit --amend --no-edit
+```
