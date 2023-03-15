@@ -6,14 +6,14 @@ This cheat sheet has been prepared and collected by [**Mohammad Dori**](https://
 
 ## Getting Started
 
-- [Git installation](#Git-installation)
+- [Git installation](#Git-Installation)
 - [Git Config](#Git-Config)
 - [Git Phases](#Git-Phases)
-- [Git Commands](#Git-commands)
+- [Git Commands](#Git-Commands)
 
 #
 
-# Git-installation
+# Git Installation
 
 ### Linux
 
@@ -55,7 +55,7 @@ git --version
 
 #
 
-# Git-Config
+# Git Config
 
 - Local level config
 - Global level config
@@ -92,7 +92,7 @@ git config --local alias.xyz "git log --oneline --all"
 
 #
 
-# Git-Phases
+# Git Phases
 
 Three phases of git :
 
@@ -114,7 +114,7 @@ git status
 
 #
 
-# Git-commands
+# Git Commands
 
 ### Create repository
 
@@ -131,6 +131,10 @@ clone repository from remote
 ```bash
 git clone https://github.com/dori-dev/learning-git.git
 ```
+
+#
+
+#
 
 ### Deep dive into the phases of Git
 
@@ -201,6 +205,10 @@ git commit --amend
 ```bash
 git commit --amend --no-edit
 ```
+
+#
+
+#
 
 ### Git history
 
@@ -302,6 +310,10 @@ show all commits of all branches in tree mode
 git log --all --graph
 ```
 
+#
+
+#
+
 ### Git alias
 
 <br>
@@ -317,6 +329,10 @@ git config --global alias.s "status"
 git config --global alias.lo "log --oneline"
 ```
 
+#
+
+#
+
 ### Git help
 
 <br>
@@ -325,6 +341,10 @@ show document related to command
 ```bash
 git help <any_commands>
 ```
+
+#
+
+#
 
 ### Git diff
 
