@@ -116,7 +116,7 @@ git status
 
 # Git-commands
 
-### Create Repository
+### Create repository
 
 <br>
 initial repository
@@ -200,4 +200,104 @@ git commit --amend
 
 ```bash
 git commit --amend --no-edit
+```
+
+### Git history
+
+<br>
+log of commits with date, descriptions and author name
+
+```bash
+git log
+```
+
+<br>
+summary of git log
+
+```bash
+git log --oneline
+```
+
+<br>
+log of commits with date, descriptions and author name related to a specific file
+
+```bash
+git log filename
+```
+
+<br>
+git log with all diff between commits
+
+```bash
+git log -p filename
+```
+
+<br>
+show all info and diff HEAD and commit(HEAD-1)
+
+```bash
+git show <commID>
+```
+
+<br>
+show all info and diff commID and commit(commID-1)
+
+```bash
+git show <commID> filename
+```
+
+<br>
+git reference log
+
+```bash
+git reflog
+```
+
+<br>
+show only commits that occurred one day ago until now
+
+```bash
+git log --since "2 days ago"
+```
+
+<br>
+only shows commits that have occurred until 18:21
+
+```bash
+git log --until "18:21"
+```
+
+<br>
+only shows the commits that user `dori-dev` has made
+
+```bash
+git log --author "dori-dev"
+```
+
+<br>
+only shows commits that have occurred in specific date and time
+
+```bash
+git log --since "Mon Nov 23 11:54:10 2023" --oneline
+```
+
+<br>
+show all commits that have remove in their message
+
+```bash
+git log --grep "remove"
+```
+
+<br>
+show the number of changes per file
+
+```bash
+git log --stat --summary
+```
+
+<br>
+show all commits of all branches in tree mode
+
+```bash
+git log --all --graph
 ```
