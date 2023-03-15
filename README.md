@@ -316,3 +316,12 @@ git config --global alias.s "status"
 ```bash
 git config --global alias.lo "log --oneline"
 ```
+
+### Git help
+
+<br>
+show document related to command
+
+```bash
+git help <any_commands>
+```
