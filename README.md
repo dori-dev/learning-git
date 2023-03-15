@@ -7,6 +7,7 @@ This cheat sheet has been prepared and collected by [**Mohammad Dori**](https://
 ## Getting Started
 
 - [Git installation](#Git-installation)
+- [Git Config](#Git-Config)
 
 #
 
@@ -48,4 +49,41 @@ Download and install Git from here: https://git-scm.com/downloads
 
 ```bash
 git --version
+```
+
+#
+
+# Git-Config
+
+- Local level config
+- Global level config
+- System level config
+
+```
+git config --global user.username "dori-dev"
+git config --global user.email "mr.dori.dev@gmail.com"
+```
+
+List of global configs
+
+```
+git config --global --list | -L
+```
+
+Edit git configs
+
+```bash
+git config --global --edit
+```
+
+add alias for git commands
+
+```
+git config --local alias.xyz "git status"
+```
+
+add alias, with xyz name
+
+```
+git config --local alias.xyz "git log --oneline --all"
 ```
