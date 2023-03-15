@@ -301,3 +301,18 @@ show all commits of all branches in tree mode
 ```bash
 git log --all --graph
 ```
+
+### Git alias
+
+<br>
+set shortcuts for git commands for example: s instead of status
+
+```bash
+git config --global alias.s "status"
+```
+
+<br>
+
+```bash
+git config --global alias.lo "log --oneline"
+```
