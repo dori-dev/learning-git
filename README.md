@@ -325,3 +325,33 @@ show document related to command
 ```bash
 git help <any_commands>
 ```
+
+### Git diff
+
+<br>
+show different between first commit and second commit in a specific file
+
+```bash
+git diff <commID_1> <commID_2> filename
+```
+
+<br>
+show all changes that were staged in a specific file
+
+```bash
+git diff --staged filename
+```
+
+<br>
+show all changes that were not commit, whether staged or not
+
+```bash
+git diff HEAD
+```
+
+<br>
+show all changes that were not staged
+
+```bash
+git diff
+```
