@@ -9,6 +9,7 @@ This cheat sheet has been prepared and collected by [**Mohammad Dori**](https://
 - [Git installation](#Git-installation)
 - [Git Config](#Git-Config)
 - [Git Phases](#Git-Phases)
+- [Git Commands](#Git-commands)
 
 #
 
@@ -110,3 +111,7 @@ To understand what stage the files in a repository are at.
 ```
 git status
 ```
+
+#
+
+# Git-commands
