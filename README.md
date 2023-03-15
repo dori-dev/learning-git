@@ -8,6 +8,7 @@ This cheat sheet has been prepared and collected by [**Mohammad Dori**](https://
 
 - [Git installation](#Git-installation)
 - [Git Config](#Git-Config)
+- [Git Phases](#Git-Phases)
 
 #
 
@@ -86,4 +87,26 @@ add alias, with xyz name
 
 ```
 git config --local alias.xyz "git log --oneline --all"
+```
+
+#
+
+# Git-Phases
+
+Three phases of git :
+
+1. **Working directory** | **Working tree** | **Working Space**
+2. **Index** | **Stage**
+3. **Repository**
+
+Files in a repository go through three stages before being under version control with git:
+
+- **Untracked**: the file exists, but is not part of git's version control
+- **Staged**: the file has been added to git's version control but changes have not been committed
+- **Committed**: the change has been committed
+
+To understand what stage the files in a repository are at.
+
+```
+git status
 ```
