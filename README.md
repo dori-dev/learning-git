@@ -886,3 +886,86 @@ quite from git bisect
 ```bash
 git bisect reset
 ```
+
+#
+
+#
+
+### Git remote
+
+<br>
+list of remotes
+
+```bash
+git remote
+```
+
+<br>
+add new remote
+
+```bash
+git remote add remote_name "remote_address"
+```
+
+<br>
+list of remotes with more information
+
+```bash
+git remote -v
+```
+
+<br>
+remove a remote
+
+```bash
+git remote remove remote_name
+```
+
+<br>
+rename a remote
+
+```bash
+git remote rename remote_name new_name
+```
+
+<br>
+get more info
+
+```bash
+git remote show remote_name
+```
+
+<br>
+push commits from branch to remote repository
+
+```bash
+git push remote_name branch_name
+```
+
+<br>
+push tag to remote
+
+```bash
+git push remote_name tag_name
+```
+
+<br>
+push all tag to remote
+
+```bash
+git push remote_name --tags
+```
+
+<br>
+fetch remote new commits to local repository(you should merge them)
+
+```bash
+git fetch
+```
+
+<br>
+automatically `git fetch` and `git merge`
+
+```bash
+git pull
+```
