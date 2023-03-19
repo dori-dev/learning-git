@@ -845,3 +845,44 @@ blame from line 1 to 10
 ```bash
 git blame <filename> -L 1,10
 ```
+
+#
+
+#
+
+### Git bisect
+
+<br>
+binary search commits
+
+```bash
+git bisect
+```
+
+<br>
+start debug
+
+```bash
+git bisect start
+```
+
+<br>
+specify the commit state(bad or good)
+
+```bash
+git bisect bad
+```
+
+<br>
+this commitID is on good state
+
+```bash
+git bisect good <commitID>
+```
+
+<br>
+quite from git bisect
+
+```bash
+git bisect reset
+```
