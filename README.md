@@ -411,21 +411,21 @@ git restore
 ```
 
 <br>
-restore un staged parts of file to head(like "git diff")
+restore unstaged parts of file to head(like "git diff")
 
 ```bash
 git restore index.txt
 ```
 
 <br>
-restore staging parts of file to un staged(like "git diff --staged")
+restore staging parts of file to unstaged(like "git diff --staged")
 
 ```bash
 git restore --staged index.txt
 ```
 
 <br>
-restore staging part of file and un staging part of file(like "git diff head")
+restore staging part of file and unstaging part of file(like "git diff head")
 
 ```bash
 git restore --source HEAD index.txt
@@ -660,16 +660,12 @@ Temporary storage for saving all of changes in your repository
 git stash
 ```
 
-
 <br>
 save files to stash
 
 ```bash
 git stash save
 ```
-
-
-
 
 <br>
 save files to stash with specific message
@@ -678,18 +674,12 @@ save files to stash with specific message
 git stash save "message"
 ```
 
-
-
-
 <br>
 for stash untracked files
 
 ```bash
 git stash save --include-untracked | -u
 ```
-
-
-
 
 <br>
 show stash 0
@@ -698,18 +688,12 @@ show stash 0
 git stash show stash@{0}
 ```
 
-
-
-
 <br>
 show `stash-0` with more information
 
 ```bash
 git stash show -p stash@{0}
 ```
-
-
-
 
 <br>
 get `stash-0` files back to repository and remove them
@@ -718,18 +702,12 @@ get `stash-0` files back to repository and remove them
 git stash pop stash@{0}
 ```
 
-
-
-
 <br>
 get `stash-0` files back to repository(without remove)
 
 ```bash
 git stash apply stash@{0}
 ```
-
-
-
 
 <br>
 remove `stash-1` from stash list
@@ -738,18 +716,12 @@ remove `stash-1` from stash list
 git stash drop stash@{1}
 ```
 
-
-
-
 <br>
 clear all stashes
 
 ```bash
 git stash clear
 ```
-
-
-
 
 <br>
 get list of stashes
@@ -758,9 +730,6 @@ get list of stashes
 git stash list
 ```
 
-
-
-
 <br>
 stash part of files
 
@@ -768,4 +737,22 @@ stash part of files
 git stash --patch | -p
 ```
 
+#
 
+#
+
+### Cherry Pick
+
+<br>
+picking a commit from a branch and applying it to another branch
+
+```bash
+git cherry-pick <commitID>
+```
+
+<br>
+bring a commit from a branch to this branch without commit them (leave them unstaged)
+
+```bash
+git cherry-pick --no-commit | -n <commitID>
+```
