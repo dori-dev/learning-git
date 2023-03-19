@@ -581,14 +581,12 @@ merge a branch
 git merge
 ```
 
-
 <br>
 merge branch with specific message
 
 ```bash
 git merge branch_name -m "merge message"
 ```
-
 
 <br>
 merge without fast forward merging
@@ -597,6 +595,27 @@ merge without fast forward merging
 git merge --no-ff branch_name
 ```
 
+#
 
+#
 
+### Git rebase
 
+<br>
+for example, `feature` branch
+
+```bash
+git rebase master
+```
+
+<br>
+
+```bash
+git checkout master
+```
+
+<br>
+
+```bash
+git merge feature
+```
