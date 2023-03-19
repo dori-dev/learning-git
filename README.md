@@ -619,3 +619,30 @@ git checkout master
 ```bash
 git merge feature
 ```
+
+#
+
+#
+
+### Conflicts
+
+<br>
+if see this message: "both modified" you have conflict
+
+```bash
+git merge branch_name
+```
+
+<br>
+you should solve conflict and commit changes
+
+```bash
+git commit -m "merge branch_name"
+```
+
+<br>
+aborting merge
+
+```bash
+git merge --abort
+```
