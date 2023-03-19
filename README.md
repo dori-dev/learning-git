@@ -375,3 +375,58 @@ show all changes that were not staged
 ```bash
 git diff
 ```
+
+#
+
+#
+
+### Checkout & Restore
+
+<br>
+git checkout
+
+```bash
+git checkout
+```
+
+<br>
+checkout in commID and create new branch
+
+```bash
+git checkout -b branch_name <commID>
+```
+
+<br>
+checkout in tag_version and create new branch
+
+```bash
+git checkout -b branch_name tag_name
+```
+
+<br>
+git restore
+
+```bash
+git restore
+```
+
+<br>
+restore un staged parts of file to head(like "git diff")
+
+```bash
+git restore index.txt
+```
+
+<br>
+restore staging parts of file to un staged(like "git diff --staged")
+
+```bash
+git restore --staged index.txt
+```
+
+<br>
+restore staging part of file and un staging part of file(like "git diff head")
+
+```bash
+git restore --source HEAD index.txt
+```
