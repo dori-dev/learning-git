@@ -484,3 +484,86 @@ undoing commit like git reset but it's safe
 ```bash
 git revert <commitID>
 ```
+
+#
+
+#
+
+### Git branch
+
+<br>
+list of all local branches
+
+```bash
+git branch
+```
+
+<br>
+list of all remote branches
+
+```bash
+git branch -r
+```
+
+<br>
+list of all branches (local branches and remote branches)
+
+```bash
+git branch -a
+```
+
+<br>
+delete a branch
+
+```bash
+git branch -d branch_name
+```
+
+<br>
+create branch
+
+```bash
+git branch branch_name
+```
+
+<br>
+switch in branches
+
+```bash
+git switch branch_name
+```
+
+<br>
+create and switch branch
+
+```bash
+git switch -c branch_name
+```
+
+<br>
+switch branch
+
+```bash
+git checkout branch_name
+```
+
+<br>
+create and switch branch
+
+```bash
+git checkout -b branch_name
+```
+
+<br>
+create and switch branch on the special commit
+
+```bash
+git checkout -b branch_name <commID>
+```
+
+<br>
+log of all commits history on all of branch and show that in graph
+
+```bash
+git log --oneline --all --graph
+```
