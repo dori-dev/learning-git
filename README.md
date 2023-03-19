@@ -646,3 +646,126 @@ aborting merge
 ```bash
 git merge --abort
 ```
+
+#
+
+#
+
+### Git stash
+
+<br>
+Temporary storage for saving all of changes in your repository
+
+```bash
+git stash
+```
+
+
+<br>
+save files to stash
+
+```bash
+git stash save
+```
+
+
+
+
+<br>
+save files to stash with specific message
+
+```bash
+git stash save "message"
+```
+
+
+
+
+<br>
+for stash untracked files
+
+```bash
+git stash save --include-untracked | -u
+```
+
+
+
+
+<br>
+show stash 0
+
+```bash
+git stash show stash@{0}
+```
+
+
+
+
+<br>
+show `stash-0` with more information
+
+```bash
+git stash show -p stash@{0}
+```
+
+
+
+
+<br>
+get `stash-0` files back to repository and remove them
+
+```bash
+git stash pop stash@{0}
+```
+
+
+
+
+<br>
+get `stash-0` files back to repository(without remove)
+
+```bash
+git stash apply stash@{0}
+```
+
+
+
+
+<br>
+remove `stash-1` from stash list
+
+```bash
+git stash drop stash@{1}
+```
+
+
+
+
+<br>
+clear all stashes
+
+```bash
+git stash clear
+```
+
+
+
+
+<br>
+get list of stashes
+
+```bash
+git stash list
+```
+
+
+
+
+<br>
+stash part of files
+
+```bash
+git stash --patch | -p
+```
+
+
