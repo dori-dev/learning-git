@@ -567,3 +567,36 @@ log of all commits history on all of branch and show that in graph
 ```bash
 git log --oneline --all --graph
 ```
+
+#
+
+#
+
+### Git merge
+
+<br>
+merge a branch
+
+```bash
+git merge
+```
+
+
+<br>
+merge branch with specific message
+
+```bash
+git merge branch_name -m "merge message"
+```
+
+
+<br>
+merge without fast forward merging
+
+```bash
+git merge --no-ff branch_name
+```
+
+
+
+
