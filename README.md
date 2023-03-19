@@ -756,3 +756,72 @@ bring a commit from a branch to this branch without commit them (leave them unst
 ```bash
 git cherry-pick --no-commit | -n <commitID>
 ```
+
+#
+
+#
+
+### Git tag
+
+<br>
+get list of tags
+
+```bash
+git tag
+```
+
+<br>
+filter tag list with pattern
+
+```bash
+git tag -l 'v1.*'
+```
+
+<br>
+add a lightweight tag
+
+```bash
+git tag v2.1.8 <commitID>
+```
+
+<br>
+add an annotated tags
+
+```bash
+git tag -a v1.0.0 -m 'message' <commitID>
+```
+
+<br>
+add a tag by gpg signature
+
+```bash
+git tag -s v1.0.0 -m 'message' <commitID>
+```
+
+<br>
+delete a tag
+
+```bash
+git tag -d v1.1.3
+```
+
+<br>
+show tag info
+
+```bash
+git show v1.0.0
+```
+
+<br>
+checkout in commitID and create new branch
+
+```bash
+git checkout -b branch_name <commitID>
+```
+
+<br>
+checkout in tag version and create new branch
+
+```bash
+git checkout -b branch_name tag_name
+```
