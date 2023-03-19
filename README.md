@@ -430,3 +430,44 @@ restore staging part of file and un staging part of file(like "git diff head")
 ```bash
 git restore --source HEAD index.txt
 ```
+
+#
+
+#
+
+### Git Reset
+
+<br>
+git reset(default tag is --mixed)
+
+```bash
+git reset
+```
+
+<br>
+reset commits history
+
+```bash
+git reset --soft  <commID>
+```
+
+<br>
+reset commits history and staging area
+
+```bash
+git reset --mixed <commID>
+```
+
+<br>
+reset commits history and staging area and working directory
+
+```bash
+git reset --hard  <commID>
+```
+
+<br>
+reset to the two commits before head
+
+```bash
+git reset --hard  HEAD~2
+```
