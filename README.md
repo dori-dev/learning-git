@@ -825,3 +825,23 @@ checkout in tag version and create new branch
 ```bash
 git checkout -b branch_name tag_name
 ```
+
+#
+
+#
+
+### Git blame
+
+<br>
+when and by whom the file was updated
+
+```bash
+git blame <filename>
+```
+
+<br>
+blame from line 1 to 10
+
+```bash
+git blame <filename> -L 1,10
+```
