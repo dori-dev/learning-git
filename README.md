@@ -471,3 +471,16 @@ reset to the two commits before head
 ```bash
 git reset --hard  HEAD~2
 ```
+
+#
+
+#
+
+### Git revert
+
+<br>
+undoing commit like git reset but it's safe
+
+```bash
+git revert <commitID>
+```
